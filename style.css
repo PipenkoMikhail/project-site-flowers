@@ -12,12 +12,14 @@ header, nav, footer, article, section, div {
 	/*border: 1px solid #00F233;*/
 }
 header {
+	direction: block;
+	position: relative;
 	height: 350px;
 	margin-bottom: 20px;
 	backdrop-filter: blur(3px);
-	
 }
 .mainMenu {
+	position: relative;
 	background-color: black;
 	height: 60px;
 }
@@ -49,7 +51,7 @@ ul li {
 }
 ul li a {
 	text-decoration: none;
-	color: red;
+	color: white;
 }
 footer {
 	text-align: center;
@@ -100,17 +102,35 @@ footer {
 	  		color: #324b4e;
 		}
 .inviteMenu {
-	display: flex;
+	margin: 62px 0px 0px 0px;
 	position: absolute;
 	height: 60vh;
 	width: 100%;
 	align-items: flex-end;
-
-	
+}
+.conteiner {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 1rem;
+}
+.conteiner > div {
+	background: #B2FF4D;
+	border-radius: 1.5rem;
+	padding: 1.5rem;
 }
 .inviteImage {
+	position: absolute;
 	display: inline-block;
+	border: 1px solid #000000;
+	top: 1%;
+	left: 5%;
 }
 .hedHeading {
+	margin: 5px;
+	position: fixed;
+	top: 40%;
 	font-family: 'Caveat', cursive;
+	border: 1px solid #000000;
+	left: 40%;
+	right: 20%;
 }
