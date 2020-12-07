@@ -12,12 +12,18 @@ header, nav, footer, article, section, div {
 	/*border: 1px solid #00F233;*/
 }
 header {
+	direction: block;
+	position: relative;
 	height: 350px;
 	margin-bottom: 20px;
 	backdrop-filter: blur(3px);
+<<<<<<< HEAD
 	position: relative;
+=======
+>>>>>>> 5c884c9883fd50da34c62119f9d7419cfa79ad97
 }
 .mainMenu {
+	position: relative;
 	background-color: black;
 	height: 60px;
 	width: 100%;
@@ -65,13 +71,18 @@ ul li {
 }
 ul li a {
 	text-decoration: none;
+<<<<<<< HEAD
 	color:white;
+=======
+	color: white;
+>>>>>>> 5c884c9883fd50da34c62119f9d7419cfa79ad97
 }
 footer {
 	text-align: center;
 	backdrop-filter: blur(3px);
 }	
 .inviteMenu {
+<<<<<<< HEAD
 	display: flex;
 	position: relative;
 	padding-top: 50px;
@@ -81,10 +92,37 @@ footer {
 	font-size: 15px;
 
 	
+=======
+	margin: 62px 0px 0px 0px;
+	position: absolute;
+	height: 60vh;
+	width: 100%;
+	align-items: flex-end;
+}
+.conteiner {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 1rem;
+}
+.conteiner > div {
+	background: #B2FF4D;
+	border-radius: 1.5rem;
+	padding: 1.5rem;
+>>>>>>> 5c884c9883fd50da34c62119f9d7419cfa79ad97
 }
 .inviteImage {
+	position: absolute;
 	display: inline-block;
+	border: 1px solid #000000;
+	top: 1%;
+	left: 5%;
 }
 .hedHeading {
+	margin: 5px;
+	position: fixed;
+	top: 40%;
 	font-family: 'Caveat', cursive;
+	border: 1px solid #000000;
+	left: 40%;
+	right: 20%;
 }
