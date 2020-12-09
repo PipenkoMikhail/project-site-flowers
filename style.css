@@ -1,52 +1,64 @@
 * {
 	box-sizing: border-box;
 }
-
 body {
 	max-width: 1280px;
 	background-color: white;
 	margin: 0 auto;
-	font-family: cursive;
 }
 header, nav, footer, article, section, div {
 	/*border: 1px solid #00F233;*/
 }
 header {
-	direction: block;
-	position: relative;
 	height: 350px;
 	margin-bottom: 20px;
-	backdrop-filter: blur(3px);
-<<<<<<< HEAD
-	position: relative;
-=======
->>>>>>> 5c884c9883fd50da34c62119f9d7419cfa79ad97
 }
 .mainMenu {
-	position: relative;
 	background-color: black;
-	height: 60px;
+	height: 40px;
 	width: 100%;
 	border-radius: 0 0 20px 20px;
 	position: fixed;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
+nav {
+	height: 40px;
+	color: white;
+}
 .menuElements {
-	
-	height: 60px;
+	height: 40px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+	z-index: 4;
 }
 .menuBlock {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	max-width: 600px;
-	float: left;
-	padding: 0px;
-	margin: 0px 0px 0px 20px;
-	line-height: 60px;
 	text-transform: uppercase;
 	font-size: 14px;
+	color: white;
+	list-style: none;
+}
+.menuLinks {
+	display: block;
+	margin-left: 30px;
+	color: white;
+	text-decoration: none;
+	padding: 7px 5px;
+}
+.menuLinks:hover {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	border-radius: 7px;
+}
+.search {
+	width: 30%;
 }
 #searchForm {
 	display: flex;
@@ -54,10 +66,24 @@ header {
 	align-items: center;
 }
 #search {
-	width: 20%;
-	height: 26px;
-	padding: 0;
+	width: 60px;
+	height: 21px;
+	margin-left: 10px;
 }
+/* Блок картинка с лозунгом */
+.inviteMenu {
+	display: flex;
+	position: relative;
+	padding-top: 50px;
+	height: auto;
+	width: 100%;
+	align-items: flex-start;
+	font-size: 15px;
+	margin: 62px 0px 0px 0px;
+	position: absolute;
+	height: 60vh;
+	width: 100%;
+	align-items: flex-end;
 article {
 	text-align: justify;
 	padding: 0 10px;
@@ -71,34 +97,10 @@ ul li {
 }
 ul li a {
 	text-decoration: none;
-<<<<<<< HEAD
-	color:white;
-=======
-	color: white;
->>>>>>> 5c884c9883fd50da34c62119f9d7419cfa79ad97
 }
 footer {
 	text-align: center;
-	backdrop-filter: blur(3px);
 }	
-.inviteMenu {
-<<<<<<< HEAD
-	display: flex;
-	position: relative;
-	padding-top: 50px;
-	height: auto;
-	width: 100%;
-	align-items: flex-start;
-	font-size: 15px;
-
-	
-=======
-	margin: 62px 0px 0px 0px;
-	position: absolute;
-	height: 60vh;
-	width: 100%;
-	align-items: flex-end;
-}
 .conteiner {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -108,7 +110,6 @@ footer {
 	background: #B2FF4D;
 	border-radius: 1.5rem;
 	padding: 1.5rem;
->>>>>>> 5c884c9883fd50da34c62119f9d7419cfa79ad97
 }
 .inviteImage {
 	position: absolute;
